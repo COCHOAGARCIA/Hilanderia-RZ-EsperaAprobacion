@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fjalla One',serif;
+}
+
+.letra-titulos{
+    font-family: 'Fjalla One',serif;
+    font-size: 1.07rem;
+    font-weight: 500;
+}
+
+.tamanoParrafo{
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#a6a6a692,#ad390b47),url(/Images/main.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3% 4% 3% 4%;
+}
+
+/*INICIO DE MENU PRINCIPAL*/
+
+.main .menuPrincipal{
+    display: block;
+    width: 100%;
+    height: 35%;
+}
+
+.main .menuPrincipal .contMenuPrincipal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .menuPrincipal .contMenuPrincipal .logo{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main .menuPrincipal .contMenuPrincipal .logo img{
+    height: 100%;
+    width: 100%;
+    transition: all .4s;
+}
+
+.main .menuPrincipal .contMenuPrincipal .menuHamburguesa{
+    width: 20%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .menuPrincipal .contMenuPrincipal .menuHamburguesa img{
+    height: 30%;
+    width: 30%;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.main .menuPrincipal .contMenuPrincipal .menuHamburguesa img:hover{
+    transform: scale(1.1);
+}
+
+.main .menuPrincipal .contMenuPrincipal .logo img:hover{
+    transform: scale(1.1);
+}
+
+/*FIN DE MENU PRINCIPAL*/
+
+/*INICIO CONTENIDO MAIN*/
+.main .contMain{
+    width: 100%;
+    height: 60vh;
+    padding: 15px 20px;
+}
+
+.main .contMain .tituloMain{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 15px;
+    transform: translateY(6rem);
+    animation: up 550ms linear forwards;
+}
+
+.tamanoh1{
+    font-size: 3.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.main .contMain .resumenMain{
+    width: 100%;
+    height: auto;
+    padding: 3% 6%;  
+}
+.main .contMain .resumenMain p{
+    text-align: center;
+    transform: translateY(7rem);
+    animation: up 800ms linear forwards;
+}
+
+.main .contMain .centrarResumen{
+    padding: 0% 9%  !important;
+}
+
+.main .contMain .centrarResumen p{
+    text-align: center;
+    transform: translateY(8rem);
+    animation: up 900ms linear forwards;
+}
+
+/*FIN CONTENIDO MAIN*/
+
+/*INICIO DE MENU OCULTO LATERAL*/
+
+.main .menu{
+    width: auto;
+    height: auto;
+}
+
+.main .menu .contenedor-menu{
+    width: 100%;
+    height: auto;
+}
+
+.main .menu .contenedor-menu .menulateral{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    top:0;
+    right: 0;
+    bottom: 0;
+    z-index: 9997;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: -10px 0 6px -9px rgb(0 0 0 / 70%);
+    left: -100%;
+    transition: .3s linear;
+}
+
+.main .menu .contenedor-menu .menulateral.active{
+    left: 0;
+}
+
+.main .menu .contenedor-menu .menulateral ul{
+    list-style-type: none;
+    padding-left: 0;
+    width: 200px;
+    background: #333332;
+    height: 100%;
+}
+
+.main .menu .contenedor-menu .menulateral ul a{
+    text-decoration: none;
+    color: #f2f2f2;
+    display: block;
+    padding: 15px 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    transition: all .4s;
+}
+
+.main .menu .contenedor-menu .menulateral ul a:hover{
+    background-color: #8A8988;
+    color: white;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+/*FIN MENÚ OCULTO LATERAL*/
+
+/*INICIO MISIÓN Y VISIÓN*/
+.contMisionVision{
+    width: 100%;
+    height: 90vh;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0,10vh);
+    transition: all 1s;
+}
+
+.contMisionVision .recuadro{
+    width: 30%;
+    min-width: 25%;
+    height: 80%;
+    padding: 20px 25px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.763);
+}
+
+.contMisionVision .recuadro .titulo{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contMisionVision .recuadro .titulo h1{
+    font-size: 2rem;
+    color:  rgb(255, 255, 255);
+}
+
+.contMisionVision .recuadro .imagen{
+    margin-top: 10px;
+    width: 100%;
+    height: 45%;
+}
+
+.contMisionVision .recuadro .imagen img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.contMisionVision .recuadro .textoMisionVision{
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+}
+
+.contMisionVision .recuadro .textoMisionVision p{
+    font-size: 1.1rem;
+}
+
+.contMisionVision .mision{
+    margin-right: 5%;
+    background-color: #f08644db;
+}
+
+.contMisionVision .vision{
+    margin-left: 5%;
+    background-color: rgba(159, 75, 22, 0.77);
+}
+
+/*FIN MISIÓN Y VISIÓN*/
+
+/*INICIO SECCION SERVICIOS*/
+.sectionServicios{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(227, 227, 227);
+    padding: 20px 30px;
+    color: #4e4e4e;
+    transform: translate(-10vh,0);
+    transition: all 1s;
+}
+
+.sectionServicios .tituloServicios{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.sectionServicios .tituloServicios .colorServicios{
+    color: #4e4e4e;
+}
+
+.sectionServicios .contServicios{
+    width: 100%;
+    height: 90%;
+    padding: 2% 4%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sectionServicios .contServicios .recuadrosServicios{
+    width: 35%;
+    height: 90%;
+    padding: 2% 3%;
+    margin-right: 10px;
+}
+
+.sectionServicios .contServicios .recuadrosServicios .tituloServicios{
+    width: 100%;
+    height: 10%;
+}
+
+.sectionServicios .contServicios .recuadrosServicios .separador hr{
+    height: 2px;
+    border: none;
+    background-color: #ffffffdb;
+}
+
+.sectionServicios .contServicios .recuadrosServicios .tituloServicios h1{
+    font-size: 2rem;
+}
+
+.sectionServicios .contServicios .recuadrosServicios .imagenServicios{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sectionServicios .contServicios .recuadrosServicios .imagenServicios img{
+    width: 100%;
+    height: 100%;
+    border: dashed 1.5px black;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: all .3s;
+}
+
+.sectionServicios .contServicios .recuadrosServicios .imagenServicios img:hover{
+    transform: scale(1.1);
+}
+
+.sectionServicios .contServicios .recuadrosServicios .textServicios{
+    width: 100%;
+    height: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+/*FIN SECCION SERVICIOS*
+
+/*INICIO DE SECCION PRODUCTOS*/
+
+.sectionProductos{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(159, 75, 22, 0.77);
+    padding: 20px 30px;
+    color: #4e4e4e;
+    transform: translate(0,-10vh);
+    transition: all 1s;
+}
+
+.sectionProductos .tituloProductos{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.sectionProductos .recuadroProductos{
+    width: 100%;
+    height: 90%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sectionProductos .recuadroProductos .contenidoProductos{
+    width: 30%;
+    height: 45%;
+    margin-right: 20px;
+}
+
+.sectionProductos .recuadroProductos .contenidoProductos .tituloContenidoProductos{
+    width: 100%;
+    height: 15%;
+}
+
+.sectionProductos .recuadroProductos .contenidoProductos .tituloContenidoProductos h1{
+    font-size: 1.5rem;
+}
+
+.sectionProductos .recuadroProductos .contenidoProductos .imagenProducto{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.sectionProductos .recuadroProductos .contenidoProductos .imagenProducto img{
+    width: 90%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all .3s;
+    border: dashed 1.5px black;
+}
+
+.sectionProductos .recuadroProductos .contenidoProductos .imagenProducto img:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 50px rgb(42, 40, 40);
+
+}
+
+/*INICIO SECCION PRODUCTOS APLICADOS*/
+.productosAplicados{
+    background-color: #f2f2f2;
+}
+
+.colorProductosAplicados{
+    color: #4e4e4e;
+    font-size: 3.5rem;
+}
+
+/*FIN SECCION PRODUCTOS APLICADOS*/
+
+/*INICIO FOOTER*/
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(#cecece99,#cecece76),url(/Images/footer.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px 30px;
+    display: flex;
+    color: #4e4e4e;
+}
+
+.footer .contactenos{
+    width: 50%;
+    height: 100%;
+}
+
+.footer .contactenos .tituloContactenos{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+.footer .contactenos .informacionContactenos{
+    width: 100%;
+    height: 80%;
+}
+
+.footer .contactenos .informacionContactenos h2{
+    padding-bottom: 3px;
+    font-weight: 500;
+}
+
+.footer .contactenos .informacionContactenos a{
+    text-decoration: none;
+    color: #4e4e4e;
+}
+
+.footer .mapa{
+    width: 50%;
+    height: 100%;
+}
+
+.footer .mapa .tituloMapa{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+.footer .mapa iframe{
+    width: 100%;
+    height: 80%;
+}
+
+
+/*CLASE VISIBLE QUE SE ENCARGARA DE IR CARGANDO LOS ELEMENTOS*/
+.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/*ANIMACIONES*/
+@keyframes up {
+	
+	100% {
+		transform: translateY(0);
+	}
+	
+}
+
+
+/*INICIO DE RESPONSIVE MENOR A 700PX*/
+
+@media screen and (max-width:980px) {
+    .contMisionVision .recuadro{
+        width: 50%;
+        min-width: 25%;
+    }
+
+    .contMisionVision .recuadro .textoMisionVision p{
+        font-size: 0.9rem;
+    }
+
+}
+
+@media screen and (max-width:750px) {
+    .main .menuPrincipal .contMenuPrincipal .menuHamburguesa {
+        width: 38%;
+        height: 90%;
+        display: flex;
+        justify-content: right;
+        padding-right: 20px;
+        align-items: center;
+    }
+
+    .main .menuPrincipal .contMenuPrincipal .menuHamburguesa img{
+        width: 50%;
+    }
+    
+    .tamanoh1{
+        font-size: 3rem;
+    }
+
+
+    .main .menuPrincipal{
+        height: 40%;
+    }
+
+    .main .menuPrincipal .contMenuPrincipal .logo{
+        width: 40%;
+        display: flex;
+        align-items: center;
+    }
+
+    .main .menuPrincipal .contMenuPrincipal .logo img{ 
+        width: 100%;
+        height: 80%;
+    }
+
+    .sectionServicios .contServicios .recuadrosServicios .textServicios p{
+        font-size: 0.8rem;
+    }
+
+    .footer{
+        height: 100vh;
+        display: inline-block;
+    }
+
+    .footer .contactenos{
+        width: 100%;
+        height: 40%;
+    }
+
+    .footer .contactenos .tituloContactenos{
+        height: 20%;
+    }
+
+    .footer .contactenos .informacionContactenos h2{
+        font-size: 1rem;
+    }
+
+    .footer .contactenos .informacionContactenos{
+        width: 100%;
+        height: 50%;
+    }
+
+    .footer .mapa{
+        width: 100%;
+        height: 60%;
+        padding-top: 15px;
+    }
+
+    .footer .mapa .tituloMapa{
+        height: 15%;
+    }
+
+    .footer .mapa iframe{
+        height: 85%;
+    }
+
+    .sectionProductos{
+        height: 150vh;
+    }
+
+    .sectionProductos .tituloProductos{
+        height: 7%;
+    }
+
+    .sectionProductos .recuadroProductos{
+        display: inline-block;
+        padding: 2px 30px;
+        height: 93%;
+    }
+
+    .sectionProductos .recuadroProductos .contenidoProductos{
+        width: 100%;
+        height: 20%;
+        margin-right: 0px;
+    }
+
+    .sectionProductos .recuadroProductos .contenidoProductos .imagenProducto{
+        padding-top: 20px;
+    }
+
+    .sectionProductos .recuadroProductos .contenidoProductos .imagenProducto img{
+        width: 70%;
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    .contMisionVision .recuadro .textoMisionVision p{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    .main .menuPrincipal{
+        height: 30%;
+    }
+
+    .main .menuPrincipal .contMenuPrincipal .logo{
+        width: 70%;
+    }
+
+    .main .menuPrincipal .contMenuPrincipal .logo img{
+        width: 70%;
+    }
+
+    .tamanoh1{
+        font-size: 3rem;
+    }
+
+    .tamanoParrafo{
+        font-size: 1rem;
+    }
+
+    .contMisionVision .recuadro .textoMisionVision p{
+        font-size: 0.65rem;
+    }
+
+    .sectionServicios{
+        height: 170vh;
+    }
+
+    .sectionServicios .tituloServicios{
+        height: 5%;
+    }
+    
+
+    .sectionServicios .contServicios {
+        display: block;
+    }
+    
+    .sectionServicios .contServicios .recuadrosServicios{
+        width: 100%;
+        height: 35%;
+    }
+    
+    .sectionServicios .contServicios .recuadrosServicios .textServicios {
+        height: 30%;
+    }
+    
+    .sectionProductos .recuadroProductos .contenidoProductos .imagenProducto img{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width:380px) {
+
+    .tamanoh1{
+        font-size: 2.1rem;
+    }
+
+    .tamanoParrafo{
+        font-size: 0.8rem;
+    }
+
+    .main .menuPrincipal{
+        height: 30%;
+    }
+
+    .main .menuPrincipal .contMenuPrincipal .logo{
+        width: 50%;
+    }
+
+    .contMisionVision .recuadro .textoMisionVision p{
+        font-size: 0.6rem;
+    }
+
+    .sectionProductos .tituloProductos{
+        height: 5%;
+    }
+
+}
+
+@media screen and (max-width:1036px) {
+
+    .colorProductosAplicados{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .sectionProductos .tituloProductosAplicados{
+        height: 8%;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+    .colorProductosAplicados{
+        font-size: 1.7rem;
+        text-align: center;
+    }
+}
