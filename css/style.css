@@ -22,7 +22,7 @@
 .main{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(#a6a6a692,#ad390b47),url(Images/main.jpg);
+    background-image: linear-gradient(#a6a6a692,#ad390b47),url("../Images/main.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -423,7 +423,7 @@
 .footer{
     width: 100%;
     height: 50vh;
-    background-image: linear-gradient(#cecece99,#cecece76),url(Images/footer.JPG);
+    background-image: linear-gradient(#cecece99,#cecece76),url("../Images/footer.JPG");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
